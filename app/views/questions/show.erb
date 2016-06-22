@@ -1,0 +1,22 @@
+<div class="container">
+  <header>
+    <h4><%= @question.title%></h4>
+  </header>
+
+  <section>
+    <p>
+      <%= @question.body %>
+    </p>
+
+    <a href="#" class='add-comment'>Add comment</a>
+  </section>
+
+  <article class='answers'>
+    <%= erb :'answers/_answers', layour: false, locals: {question: @question}%>
+  </article>
+
+  <section class='answer-form'>
+    <%= erb :'answers/_answer_form'%>
+  </section>
+
+</div>

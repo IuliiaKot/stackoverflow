@@ -1,0 +1,17 @@
+<div class="container">
+  <%= erb :'_errors', layout: false, locals: {errors: @errors}%>
+
+<form class="" action="/questions" method="post">
+  <div class="">
+    Title:
+    <input type="text" name="question[title]">
+  </div>
+
+  <div class="">
+    <textarea name="question[body]" rows="8" cols="40"></textarea>
+  </div>
+
+  <input type="submit" value="Post Your Question">
+</form>
+
+</div>

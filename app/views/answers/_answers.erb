@@ -1,0 +1,11 @@
+<header class='header-count-answer'>
+  <%= question.answers.count%> Answers
+</header>
+
+<% question.answers.each do |answer|%>
+  <section class='answer'>
+    <p><%= answer.body %></p>
+    <span class='info'>answered <%= answer.created_at %> by <%= answer.user.username%></span>
+    <a href="#" class='add-comment'>Add comment</a>
+  </section>
+<% end %>

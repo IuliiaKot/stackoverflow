@@ -1,0 +1,11 @@
+<div class="container">
+    <article class="">
+      <% @questions.each do |question| %>
+      <section>
+        <a href="/questions/<%= question.id%>"><%= question.title%></a>
+      </section>
+      <% end %>
+    </article>
+
+    <a href="/questions/new">Create a new question</a>
+</div>
