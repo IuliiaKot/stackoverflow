@@ -4,9 +4,7 @@
   </header>
 
   <section>
-    <p>
-      <%= @question.body %>
-    </p>
+    <p class='question-body'><%= @question.body %></p>
 
     <a href="#" class='add-comment'>Add comment</a>
   </section>
@@ -15,7 +13,7 @@
     <%= erb :'answers/_answers', layour: false, locals: {question: @question}%>
   </article>
 
-  <section class='answer-form'>
+  <section>
     <%= erb :'answers/_answer_form'%>
   </section>
 

@@ -21,4 +21,20 @@
 
 .answer {
   border-bottom: solid 1px grey;
+  width: 70%;
+}
+
+
+.answer-form {
+  position: relative;
+  margin-bottom: -10px;
+}
+
+.question-body, .answer-body {
+  margin-left: 30px;
+}
+
+
+li {
+  list-style: none;
 }

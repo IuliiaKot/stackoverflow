@@ -1,9 +1,12 @@
-<h4>Your Answer</h4>
-<form class="" action="/questions/<%= @question.id%>/answers" method="post">
+<div class="answer-form">
+  <h4>Your Answer</h4>
+  <form class="" action="/questions/<%= @question.id%>/answers" method="post">
 
-  <div class="">
-    <textarea name="answer[body]" rows="8" cols="40"></textarea>
-  </div>
+    <div class="">
+      <textarea name="answer[body]" rows="8" cols="40"></textarea>
+    </div>
 
-  <input type="submit" value="Post Your Answer">
-</form>
+    <input type="submit" value="Post Your Answer">
+  </form>
+
+</div>
