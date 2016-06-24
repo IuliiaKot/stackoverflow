@@ -1,4 +1,6 @@
 get '/sessions/login' do
+    # binding.pry
+
   erb :'users/login'
 end
 

@@ -1,7 +1,13 @@
+body {
+    font-family:sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
 .container {
   margin :0 auto;
   margin-top: 120px;
-  width: 50%;
+  width: 60%;
 
 }
 
@@ -21,7 +27,7 @@
 
 .answer {
   border-bottom: solid 1px grey;
-  width: 70%;
+  /*width: 70%;*/
 }
 
 
@@ -37,4 +43,76 @@
 
 li {
   list-style: none;
+}
+
+
+.vote-button {
+  color: #8C8C8C;
+  text-decoration: none;
+  display: inline;
+  vertical-align: sub;
+}
+
+
+.inline {
+  display: inline;
+}
+
+.upvote-button, .downvote-button {
+  background-color: transparent;
+  border: none;
+  padding-top: 5px;
+  color: #8C8C8C;
+  vertical-align: sub;
+  padding: 1px 0px 0px 0px;
+  font-size: 38px;
+}
+
+
+
+/*menu bar*/
+
+.navigate li{
+  display: inline-block;
+}
+
+.menu-tags {
+  margin-right: 40px;
+}
+
+.menu-tags li {
+  display: inline-block;
+  float: right;
+  margin-right: 8px;
+  border: solid 1px grey;
+  padding: 5px;
+  background-color: grey;
+}
+
+.menu-tags li a {
+   text-decoration: none;
+    color: white;
+}
+
+.menu-tags li:hover {
+  background-color: orange;
+}
+
+.menu-tags li:active {
+  background-color: orange;
+}
+
+
+/*question title*/
+
+.question-title{
+  width: 460px;
+  height: 17px;
+  margin-bottom: 8px;
+}
+
+
+.single-question {
+  border-bottom: solid 1px grey;
+  margin-bottom: 20px;
 }

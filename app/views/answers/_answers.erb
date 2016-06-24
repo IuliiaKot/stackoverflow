@@ -2,17 +2,8 @@
   <%= question.answers.count%> Answers
 </header>
 
-  <% question.answers.each do |answer|%>
-    <ul>
-      <li><a href="#">Up</a></li>
-      <li>0</li>
-      <li><a href="#">Dw</a></li>
-    </ul>
-    <section class='answer'>
-
-      <p class='answer-body'><%= answer.body %></p>
-      <span class='info'>answered <%= answer.created_at %> by <%= answer.user.username%></span>
-      <a href="#" class='add-comment'>Add comment</a>
-
-    </section>
-  <% end %>
+  <article class="collection-of-answers">
+    <% question.answers.each do |answer|%>
+      <%= erb :'answers/_answer', layout: false, locals: {answer: answer}%>
+    <% end %>
+  </article>

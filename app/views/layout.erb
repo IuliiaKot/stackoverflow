@@ -6,6 +6,7 @@
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
   -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"
   <link rel="stylesheet" href="/css/normalize.css">
   <!--
     application.css is where you put your styles
@@ -19,7 +20,7 @@
 </head>
 <nav>
   <% if login? %>
-    <ul>
+    <ul class='navigate'>
       <li><a href="/questions">Questions</a></li>
       <li><a href="/sessions/logout">Logout</a></li>
     </ul>
@@ -31,6 +32,14 @@
     </ul>
   <% end %>
 </nav>
+
+<section class="menu-tags">
+  <ul>
+    <li><a href="/questions">Questions</a></li>
+    <li><a href="#">Tags</a></li>
+    <li><a href="/questions/new">Ask a Auestion</a></li>
+  </ul>
+</section>
 <body>
   <%= yield %>
 </body>

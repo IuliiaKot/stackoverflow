@@ -5,3 +5,9 @@ end
 def login?
   session[:user_id]
 end
+
+
+def require_user
+    # binding.pry
+  redirect '/sessions/login' unless login?
+end

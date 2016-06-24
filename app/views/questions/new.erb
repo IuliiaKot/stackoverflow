@@ -4,11 +4,15 @@
 <form class="" action="/questions" method="post">
   <div class="">
     Title:
-    <input type="text" name="question[title]">
+    <input type="text" name="question[title]" class='question-title'>
   </div>
 
   <div class="">
-    <textarea name="question[body]" rows="8" cols="40"></textarea>
+    <textarea name="question[body]" rows="10" cols="80"></textarea>
+  </div>
+  <div class="">
+    Tag:
+    <input type="text" name="tag" class='question-title'>
   </div>
 
   <input type="submit" value="Post Your Question">
