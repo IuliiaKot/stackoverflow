@@ -5,12 +5,17 @@
     </form>
   </li>
   <li class='vote-count'><%= answer.votes.count%></li>
-  <li><a href="#">Dw</a></li>
+  <li><form method="post" action='/answers/<%= answer.id %>/downvote' class="inline">
+      <button type="submit" name="submit_param" value="submit_value" class="fa fa-sort-asc vote-button downvote-button"></button>
+      </form>
+    </li>
 </ul>
 <section class='answer'>
 
   <p class='answer-body'><%= answer.body %></p>
   <span class='info'>answered <%= answer.created_at %> by <%= answer.user.username%></span>
-  <a href="#" class='add-comment'>Add comment</a>
+  <div class="comment">
+  </div>
+  <a class="add-comment"href="/answers/<%= answer.id%>/comments/new" class='add-comment'>Add comment</a>
 
 </section>

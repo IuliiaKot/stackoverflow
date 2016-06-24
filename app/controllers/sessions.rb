@@ -5,8 +5,9 @@ get '/sessions/login' do
 end
 
 post '/sessions' do
-  @user = User.find_by(email: params[:email])
-  if @user && @user.authenticate(params[:password])
+  # binding.pry
+  @user = User.find_by(email: params[:user][:email])
+  if @user && @user.authenticate(params[:user][:password])
     session[:user_id] = @user.id
     redirect '/questions'
   else

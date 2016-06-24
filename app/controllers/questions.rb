@@ -47,9 +47,7 @@ post '/questions/:id/upvote' do
   # binding.pry
   question = Question.find_by(id: params[:id])
   vote = question.votes.create(user_id: current_user.id)
-  # if vote.save
-  #   redirect "/questions/#{answer.question.id}"
-  # else
+
   redirect "/questions"
   # end
 end
